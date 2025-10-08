@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limpieza y Mantenimiento de Alcantarillas</title>
+  <link rel="stylesheet" href="style_alcantarillas.css">
+</head>
+<body>
+  <header>
+    <h1>🚰 Limpieza y Mantenimiento del Alcantarillado</h1>
+    <p>Colonia El Campesino | Proyecto de Jesús Castro Vargas</p>
+    <p>Asesor: Isidro González Vázquez | Grupo: M23C2G52-023 Generación 52</p>
+  </header>
+
+  <nav class="menu">
+    <a href="#" onclick="mostrarSeccion('introduccion')">Introducción</a>
+    <a href="#" onclick="mostrarSeccion('descripcion')">Descripción</a>
+    <a href="#" onclick="mostrarSeccion('objetivo')">Objetivo</a>
+    <a href="#" onclick="mostrarSeccion('metas')">Metas</a>
+    <a href="#" onclick="mostrarSeccion('beneficios')">Beneficios</a>
+    <a href="#" onclick="mostrarSeccion('reflexion')">Reflexión</a>
+    <a href="#" onclick="mostrarSeccion('galeria')">Galería</a>
+  </nav>
+
+  <main class="contenido">
+    <section id="introduccion">
+      <h2>🌿 Introducción</h2>
+      <p>México tiene graves problemas de inundaciones que afectan la vida de todos los pobladores, ya que se tienen miles de pérdidas tanto económicas como de vida. De acuerdo con Protección Civil (2018), en el año 2015 se registraron más de 28 millones de casos de inundaciones a nivel nacional, ocasionando pérdidas económicas de miles de millones de dólares, lo que refleja la importancia de implementar medidas preventivas a nivel local.</p>
+    </section>
+
+    <section id="descripcion">
+      <h2>🔍 Descripción del Proyecto</h2>
+      <p>Este proyecto busca reducir las inundaciones en la colonia El Campesino mediante campañas de limpieza y mantenimiento preventivo en el sistema de alcantarillado y drenaje. Las inundaciones generan graves afectaciones económicas, estructurales y de salud en la comunidad, ya que provocan daños a viviendas, pérdida de bienes y riesgos sanitarios.</p>
+    </section>
+
+    <section id="objetivo">
+      <h2>🎯 Objetivo</h2>
+      <p>Reducir las inundaciones en la colonia El Campesino mediante campañas de limpieza y mantenimiento preventivo en el sistema de alcantarillado para proteger los bienes y la salud de la comunidad.</p>
+    </section>
+
+    <section id="metas">
+      <h2>🏆 Metas</h2>
+      <ul>
+        <li>Realizar mantenimiento y limpieza del sistema de alcantarillado.</li>
+        <li>Implementar campañas de educación comunitaria sobre el cuidado del sistema de drenaje.</li>
+        <li>Establecer programas comunitarios permanentes de limpieza.</li>
+        <li>Establecer reglas y mecanismos de vigilancia para evitar tirar basura en alcantarillas.</li>
+      </ul>
+    </section>
+
+    <section id="beneficios">
+      <h2>💡 Beneficios</h2>
+      <ul>
+        <li>Menos enfermedades.</li>
+        <li>Una comunidad mejor.</li>
+        <li>Menor impacto económico.</li>
+        <li>Comunidad más limpia.</li>
+        <li>Reducción de problemas de inundaciones.</li>
+        <li>Reducción de pérdidas económicas y materiales.</li>
+      </ul>
+    </section>
+
+    <section id="reflexion">
+      <h2>💭 Reflexión Personal</h2>
+      <p>Participar en el proyecto de limpieza y mantenimiento del sistema de alcantarillado en la colonia El Campesino me permitió comprender la magnitud de los problemas que generan las inundaciones en nuestra comunidad. Aprendí que mantener limpias las alcantarillas y promover el cuidado del drenaje no solo protege la infraestructura, sino que también previene enfermedades y pérdidas económicas significativas.</p>
+      <p>Me di cuenta de que la educación comunitaria es tan importante como la acción directa, ya que involucrar a los vecinos en la limpieza y cuidado del sistema fortalece la conciencia ambiental y el sentido de responsabilidad colectiva.</p>
+      <p>Personalmente, este proyecto me enseñó que soluciones simples, como campañas de limpieza y vigilancia comunitaria, pueden generar un gran impacto en la seguridad y bienestar de los habitantes. Además, trabajar de manera organizada y colaborativa me permitió valorar el esfuerzo conjunto y la importancia de implementar medidas preventivas de manera constante.</p>
+      <p>En conclusión, este proyecto no solo ayuda a reducir inundaciones y problemas sanitarios, sino que también fomenta la participación activa de la comunidad, promoviendo un entorno más limpio, seguro y sustentable.</p>
+    </section>
+
+    <section id="galeria">
+      <h2>📸 Galería</h2>
+      <div class="galeria">
+        <img src="diagch.jpg" alt="Diagrama del proyecto de limpieza de alcantarillas">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Elaborado por Jesús Castro Vargas | Prepa en Línea-SEP</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('main.contenido > section');
+      secciones.forEach(sec => {
+        sec.style.display = (sec.id === id) ? 'block' : 'none';
+      });
+    }
+
+    window.onload = function() {
+      mostrarSeccion('introduccion'); // Mostrar Introducción al cargar
+    }
+  </script>
+</body>
+</html>
